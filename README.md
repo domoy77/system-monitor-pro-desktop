@@ -3,6 +3,7 @@
 ![System Monitor Pro](https://img.shields.io/badge/System-Monitor%20Pro-blue)
 ![Electron](https://img.shields.io/badge/Electron-28.0.0-47848F)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-success)
+[![Buy Me A Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-yellow.svg)](https://buymeacoffee.com/domoy77)
 
 Professional desktop application for real-time system monitoring with beautiful dashboard interface.
 

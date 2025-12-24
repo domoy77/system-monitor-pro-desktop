@@ -39,7 +39,7 @@ Professional desktop application for real-time system monitoring with beautiful 
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/domoy77/system-monitor-pro-desktop.git
 cd system-monitor-pro-desktop
 
 # Install dependencies

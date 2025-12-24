@@ -1,4 +1,4 @@
-# System Monitor Pro Desktop
+# System Monitoring Desktop
 
 [![GitHub stars](https://img.shields.io/github/stars/domoy77/system-monitor-pro-desktop?style=social)](https://github.com/domoy77/system-monitor-pro-desktop/stargazers)
 ![System Monitor Pro](https://img.shields.io/badge/System-Monitor%20Pro-blue)

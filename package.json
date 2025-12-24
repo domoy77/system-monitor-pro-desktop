@@ -1,0 +1,137 @@
+{
+  "name": "system-monitor-pro-desktop",
+  "version": "1.0.0",
+  "description": "Professional Desktop System Monitoring Application",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "build:all": "npm run build:win && npm run build:mac && npm run build:linux",
+    "pack": "electron-builder --dir"
+  },
+  "keywords": [
+    "system-monitor",
+    "desktop",
+    "electron",
+    "monitoring",
+    "dashboard",
+    "cpu-monitor",
+    "memory-monitor",
+    "system-information"
+  ],
+  "author": {
+    "name": "Domoy",
+    "email": "domoy@gmail.com",
+    "url": "https://github.com/domoy"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/domoy/system-monitor-pro-desktop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/domoy/system-monitor-pro-desktop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/domoy/system-monitor-pro-desktop/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "systeminformation": "^5.27.11"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.domoy.systemmonitorpro",
+    "productName": "System Monitor Pro",
+    "copyright": "Copyright © 2024 Domoy",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "!dist/**/*",
+      "!*.md",
+      "!.gitignore",
+      "!*.log"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64", "ia32"]
+        },
+        "portable"
+      ],
+      "icon": "assets/icon.png",
+      "publisherName": "Domoy"
+    },
+    "mac": {
+      "target": ["dmg", "zip"],
+      "icon": "assets/icon.png",
+      "category": "public.app-category.utilities",
+      "darkModeSupport": true
+    },
+    "linux": {
+      "target": ["AppImage", "deb", "rpm", "snap"],
+      "icon": "assets/icon.png",
+      "category": "Utility",
+      "description": "Professional system monitoring desktop application",
+      "synopsis": "System Monitor Pro Desktop",
+      "maintainer": "Domoy <domoy@gmail.com>",
+      "desktop": {
+        "Name": "System Monitor Pro",
+        "Comment": "Professional System Monitoring Tool",
+        "Categories": "Utility;System;Monitor;",
+        "Keywords": "system;monitor;cpu;memory;disk;network;"
+      }
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "System Monitor Pro",
+      "installerIcon": "assets/icon.png",
+      "uninstallerIcon": "assets/icon.png",
+      "installerHeaderIcon": "assets/icon.png",
+      "menuCategory": "System Monitor Pro"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220,
+          "type": "file"
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    },
+    "appImage": {
+      "license": "MIT",
+      "synopsis": "System monitoring tool"
+    },
+    "snap": {
+      "grade": "stable",
+      "confinement": "strict",
+      "summary": "System monitoring application",
+      "description": "Professional desktop system monitoring tool with real-time dashboard"
+    }
+  }
+}

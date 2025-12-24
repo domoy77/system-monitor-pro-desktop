@@ -428,14 +428,14 @@ function createMenu() {
                 {
                     label: 'Documentation',
                     click: () => {
-                        shell.openExternal('https://github.com/yourusername/system-monitor-pro-desktop');
+                        shell.openExternal('https://github.com/domoy77/system-monitor-pro-desktop');
                     }
                 },
                 { type: 'separator' },
                 {
                     label: 'Report Issue',
                     click: () => {
-                        shell.openExternal('https://github.com/yourusername/system-monitor-pro-desktop/issues');
+                        shell.openExternal('https://github.com/domoy77/system-monitor-pro-desktop/issues');
                     }
                 },
                 { type: 'separator' },
